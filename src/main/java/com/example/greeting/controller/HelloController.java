@@ -1,12 +1,13 @@
 package com.example.greeting.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+
 
 @Controller
 public class HelloController {
-    @RequestMapping(value = "/hello")
+    @GetMapping("/hello")
     private String hello() {
-        return "/index.html";
+        return "/index";
     }
 }
