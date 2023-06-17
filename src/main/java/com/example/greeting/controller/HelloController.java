@@ -11,7 +11,6 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello(@RequestParam("country") String country, Model model) {
 
-//        boolean country = true;
         if (country.equals("ja")) {
             model.addAttribute("message", "こんにちは 世界!");
         } else if (country.equals("us")) {
