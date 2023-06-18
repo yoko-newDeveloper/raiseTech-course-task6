@@ -18,7 +18,7 @@ public class RestUsJpController {
         } else if (Objects.equals(country, "us")) {
             return "hello!";
         } else {
-            // jp, us以外の場合は中国語で表示
+            // jp, us以外の場合はフランス語で表示
             return "bonjour!";
         }
     }
